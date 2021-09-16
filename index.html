@@ -16,8 +16,8 @@
   <aside class="aside">
     <div class="searchForCity">
     <h2 class="search">Search for a City:</h2>
-    <input type="text" id="fname" name="fname" class="input" value="Chicago">
-    <button class="searchButton">Search</button>
+    <input type="text" id="cityInput" name="fname" class="input" value="Chicago">
+    <button class="searchButton" id="searchButton">Search</button>
   
     </div>
     
@@ -30,63 +30,64 @@
   </aside>
 
   <div class="currentCitySummary">
-    <h2>City</h2>
-    <p>Temp: </p>
-    <p>Wind: </p>
-    <p>Humidity: </p>
-    <p>UV Index: </p>
+    <h2 id="currentCity">City</h2>
+    <p id="currentTemp">Temp: </p>
+    <p id="currentWind">Wind: </p>
+    <p id="currentHumidity">Humidity: </p>
+    <p id="currentUv">UV Index: </p>
   </div>
 
   <div class="fiveDay">
     <h3>5-Day Forcast</h3>
 
-    <div>
-      <h4>Date</h4>
+    <div id="dayOne">
+      <h4 id="oneDate">Date</h4>
       <!--Day 1-->
-      <!--Weather Image-->
-      <p>Temp: </p>
-      <p>Wind: </p>
-      <p>Humidity: </p>
+      <p id="oneImage">img</p>
+      <p id="oneTemp">Temp: </p>
+      <p id="oneWind">Wind: </p>
+      <p id="oneHumid">Humidity: </p>
     </div>
 
-    <div>
-      <h4>Date</h4>
+    <div id="dayTwo">
+      <h4 id="twoDate">Date</h4>
       <!--Day 2-->
-      <!--Weather Image-->
-      <p>Temp: </p>
-      <p>Wind: </p>
-      <p>Humidity: </p>
+      <p id="twoImage">img</p>
+      <p id="twoTemp">Temp: </p>
+      <p id="twoWind">Wind: </p>
+      <p id="twoHumid">Humidity: </p>
     </div>
 
-    <div>
-      <h4>Date</h4>
+    <div id="dayThree">
+      <h4 id="threeDate">Date</h4>
       <!--Day 3-->
-      <!--Weather Image-->
-      <p>Temp: </p>
-      <p>Wind: </p>
-      <p>Humidity: </p>
+      <p id="threeImage">img</p>
+      <p id="threeTemp">Temp: </p>
+      <p id="threeWind">Wind: </p>
+      <p id="threeHumid">Humidity: </p>
     </div>
 
-    <div>
-      <h4>Date</h4>
+    <div id="four">
+      <h4 id="fourDate">Date</h4>
       <!--Day 4-->
-      <!--Weather Image-->
-      <p>Temp: </p>
-      <p>Wind: </p>
-      <p>Humidity: </p>
+      <p id="fourImage">img</p>
+      <p id="fourTemp">Temp: </p>
+      <p id="fourWind">Wind: </p>
+      <p id="fourHumid">Humidity: </p>
     </div>
 
-    <div>
-      <h4>Date</h4>
-      <!--Day 5-->
-      <!--Weather Image-->
-      <p>Temp: </p>
-      <p>Wind: </p>
-      <p>Humidity: </p>
+    <div id="dayFive">
+      <h4 id="fiveDate">Date</h4>
+      <!--Day 1-->
+      <p id="fiveImage">img</p>
+      <p id="fiveTemp">Temp: </p>
+      <p id="fiveWind">Wind: </p>
+      <p id="fiveHumid">Humidity: </p>
     </div>
+
 
   </div>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="./Assets/js/script.js"></script>
 </body>
 </html>

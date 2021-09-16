@@ -22,6 +22,7 @@ h4 * {
     float: left;
     height: 500px;
     width: 300px;
+    margin: 10px;;
 }
 
 aside button {
@@ -45,13 +46,14 @@ aside button:hover {
     height: 200px;
     float: inline-start; 
     position: relative;
-    margin-left: 310px;
+    margin-left: 315px;
     padding: 10px;
 }
 
 .searchForCity{
     padding-bottom: 15px;
     border-bottom: 2px solid gray;
+    margin-bottom: 15px;
     
 }
 
@@ -67,16 +69,20 @@ aside button:hover {
     height: 300px;
     overflow-x: scroll;
     padding: 15px;
+    padding-top: 0px;
 }
 
 .fiveDay div {
     padding: 10px;
-    width: 150px;
-    height: 175px;
-    background-color: wheat;
+    padding-top: 0px;
+    width: 170px;
+    height: 200px;
+    background-color: rgb(37, 54, 70);
     margin-right: 15px;
     display: inline-block;
     margin-bottom: 15px;
+    color: white;
+    
 }
 
 .input{
@@ -91,6 +97,7 @@ aside button:hover {
 
 .searchButton{
     background-color: cornflowerblue;
+    color: white;
 }
 
 
