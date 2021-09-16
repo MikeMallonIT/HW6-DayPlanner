@@ -1,0 +1,96 @@
+* {
+    font-family: sans-serif;
+}
+
+h4 * {
+    padding: 0px;;
+}
+
+
+.header{
+
+    background: linear-gradient(to right, blue, rgb(30, 5, 65));
+    height: 75px;
+    width: 100%;
+    position:relative;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.aside{
+    float: left;
+    height: 500px;
+    width: 300px;
+}
+
+aside button {
+    height: 30px;
+    width: 90%;
+    margin: 10px;
+    background-color:#d4d4d4;
+    border: 0px;
+	border-radius:5px;
+    cursor:pointer;
+	color:#4f4f4f;
+}
+
+aside button:hover {
+    background-color:#c2c2c2;
+}
+
+.currentCitySummary{
+    border: 2px solid black;
+    width: 70%;
+    height: 200px;
+    float: inline-start; 
+    position: relative;
+    margin-left: 310px;
+    padding: 10px;
+}
+
+.searchForCity{
+    padding-bottom: 15px;
+    border-bottom: 2px solid gray;
+    
+}
+
+.wD {
+    color: white;
+    text-align: center;
+    padding-top: 25px;
+
+}
+
+.fiveDay{
+    width: 75%;
+    height: 300px;
+    overflow-x: scroll;
+    padding: 15px;
+}
+
+.fiveDay div {
+    padding: 10px;
+    width: 150px;
+    height: 175px;
+    background-color: wheat;
+    margin-right: 15px;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.input{
+    height: 30px;
+    width: 87%;
+    margin: 10px;
+    margin-bottom: 0px;
+	border-radius:5px;
+    border-color: black;
+}
+
+
+.searchButton{
+    background-color: cornflowerblue;
+}
+
+
