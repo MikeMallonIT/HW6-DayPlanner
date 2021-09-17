@@ -114,7 +114,9 @@ function getCurrentWeather(cityName, units){
         console.log("Whole thing (advanced) ", weather);
         //console.log("Current Temp " + weather.main.temp);
 
-        currentUv.innerHTML = "UV Index: "+weather.current.uvi;
+        currentUv.innerHTML = weather.current.uvi;
+
+        formatUv(weather.current.uvi)
 
         currentPic.setAttribute("class", "");
         onePic.setAttribute("class", "");
@@ -273,6 +275,22 @@ saveSix.addEventListener("click", function(){
         getCurrentWeather(cityArray[5], units);
     }
 });
+
+function formatUv(uv){
+
+    console.log(uv)
+
+    if(uv >= 6){
+        currentUv.setAttribute("class", "uvHigh");
+    }
+    else if(uv > 3){
+        currentUv.setAttribute("class", "uvMedium");
+    }
+    else{
+        currentUv.setAttribute("class", "uvLow");
+    }
+}
+
 
 //Clear cached cities (testing purposes)
 function clearSaved(){

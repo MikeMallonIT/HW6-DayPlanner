@@ -112,3 +112,36 @@ aside button:hover {
     float: right;
 }
 
+.uvLow{
+    color: white;
+    border-radius:5px;
+    border-color: green;
+    background-color: green;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.uvMedium{
+    color: black;
+    border-radius:5px;
+    border-color: yellow;
+    background-color: yellow;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.uvHigh{
+    color: white;
+    border-radius:5px;
+    border-color: red;
+    background-color: red;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
