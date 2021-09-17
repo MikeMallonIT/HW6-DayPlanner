@@ -46,6 +46,14 @@ var fiveTemp = document.getElementById("fiveTemp");
 var fiveWind = document.getElementById("fiveWind");
 var fiveHumid = document.getElementById("fiveHumid")
 
+//Saved Cities
+var saveOne = document.getElementById("saveOne")
+var saveTwo = document.getElementById("saveTwo");
+var saveThree = document.getElementById("saveThree");
+var saveFour = document.getElementById("saveFour")
+var saveFive = document.getElementById("saveFive")
+var saveSix = document.getElementById("saveSix")
+
 //Return current weather
 function getCurrentWeather(cityName, units){
 
@@ -72,6 +80,8 @@ function getCurrentWeather(cityName, units){
 
         getAdvancedWeather(lat, lon);
         save(weather.name);
+        loadSavedCities();
+
     })
  }
 
@@ -139,11 +149,106 @@ searchButtonClick.addEventListener("click", function(){
 
 function save(data){
 
-
+    var array = JSON.parse(localStorage.getItem("Cities")) || [];
+    array.push(data);
+  
+    localStorage.setItem("Cities", JSON.stringify(array));
 
 }
 
 function loadSavedCities(){
 
+    var cityArray = JSON.parse(localStorage.getItem("Cities")) || [];
+
+    for(var i=0; i<cityArray.length; i++){
+
+
+        if(i==0){
+            saveOne.innerHTML = cityArray[0];
+        }
+
+        if(i==1){
+            saveTwo.innerHTML = cityArray[1];
+        }
+
+        if(i==2){
+            saveThree.innerHTML = cityArray[2];
+        }
+
+        if(i==3){
+            saveFour.innerHTML = cityArray[3];
+        }
+
+        if(i==4){
+            saveFive.innerHTML = cityArray[4];
+        }
+
+        if(i==5){
+            saveSix.innerHTML = cityArray[5];
+        }
+    }    
+}
+
+saveOne.addEventListener("click", function(){
+
+    var cityArray = JSON.parse(localStorage.getItem("Cities")) || [];
+
+    if(cityArray[0]){
+        getCurrentWeather(cityArray[0], units);
+    }
+});
+
+saveTwo.addEventListener("click", function(){
+
+    var cityArray = JSON.parse(localStorage.getItem("Cities")) || [];
+
+    if(cityArray[1]){
+        getCurrentWeather(cityArray[1], units);
+    }
+});
+
+saveThree.addEventListener("click", function(){
+
+    var cityArray = JSON.parse(localStorage.getItem("Cities")) || [];
+
+    if(cityArray[2]){
+        getCurrentWeather(cityArray[2], units);
+    }
+});
+
+saveFour.addEventListener("click", function(){
+
+    var cityArray = JSON.parse(localStorage.getItem("Cities")) || [];
+
+    if(cityArray[3]){
+        getCurrentWeather(cityArray[3], units);
+    }
+});
+
+saveFive.addEventListener("click", function(){
+
+    var cityArray = JSON.parse(localStorage.getItem("Cities")) || [];
+
+    if(cityArray[4]){
+        getCurrentWeather(cityArray[4], units);
+    }
+});
+
+saveSix.addEventListener("click", function(){
+
+    var cityArray = JSON.parse(localStorage.getItem("Cities")) || [];
+
+    if(cityArray[5]){
+        getCurrentWeather(cityArray[5], units);
+    }
+});
+
+
+function clearSaved(){
+
+    localStorage.setItem("Cities", JSON.stringify([]));
+  
 
 }
+
+loadSavedCities();

@@ -20,7 +20,7 @@ h4 * {
 
 .aside{
     float: left;
-    height: 500px;
+    height: 100%;
     width: 300px;
     margin: 10px;;
 }
@@ -65,11 +65,10 @@ aside button:hover {
 }
 
 .fiveDay{
-    width: 75%;
-    height: 300px;
-    overflow-x: scroll;
+    height: 350px;
     padding: 15px;
     padding-top: 0px;
+    padding-left: 0px;
 }
 
 .fiveDay div {

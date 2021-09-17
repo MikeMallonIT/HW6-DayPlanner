@@ -88,3 +88,17 @@ You are required to submit BOTH of the following for review:
 
 - - -
 © 2021 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
+
+
+
+
+https://www.w3schools.com/cssref/sel_class.asp
+https://www.w3schools.com/cssref/tryit.asp?filename=trycss_sel_class
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Images/Using_CSS_gradients
+https://www.w3schools.com/css/css_border_shorthand.asp
+https://www.w3docs.com/snippets/css/how-to-horizontally-center-a-div-with-css.html
+http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/colors/colors_picker.asp-colorhex=B0E0E6.html
+https://www.bestcssbuttongenerator.com/#/28
+https://blog.hubspot.com/website/css-border
+https://stackoverflow.com/questions/15567395/force-elements-to-be-horizontally-aligned
+https://momentjs.com/
