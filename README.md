@@ -26,7 +26,7 @@ Download all associated files in this repository including the index.html file a
 The website has been deployed and can be accessed publicly by clicking [here](https://mikemallonit.github.io/HW6-WeatherDashboard/)
 
 The website should look like this:
-![Website Screen Shot](./assets/websiteScreenshot.pdf)
+![Website Screen Shot](./Assets/websiteScreenshot.pdf)
 
 <br />
 
