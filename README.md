@@ -1,104 +1,40 @@
-# 06 Server-Side APIs: Weather Dashboard
+# Homework 6 - Weather Dashboard - Michael Mallon
 
-## Your Task
+## What I did
+In homework 6, I used the OpenWeather Map API to retrieve weather related date for a given city. I also utalixed my knowlege in HTML and CSS development to write the front end for this application. The cities searched are saved in local storage and displayed on-screen in buttons. UV index is formatted based on how high it is. Weather pictures are retrieved based on the icon object that is retrieved when the API is given a city.
 
-Third-party APIs allow developers to access their data and functionality by making requests with specific parameters to a URL. Developers are often tasked with retrieving data from another application's API and using it in the context of their own. Your challenge is to build a weather dashboard that will run in the browser and feature dynamically updated HTML and CSS.
+<br>
 
-Use the [OpenWeather One Call API](https://openweathermap.org/api/one-call-api) to retrieve weather data for cities. Read through the documentation for setup and usage instructions. You will use `localStorage` to store any persistent data. For more information on how to work with the OpenWeather API, refer to the [Full-Stack Blog on how to use API keys](https://coding-boot-camp.github.io/full-stack/apis/how-to-use-api-keys).
+### Motivation:
+I knew from the start that server-side APIs were important and this homework assignment was so-far the most interesting on for me. I am really excited for Project 1 where we will be using a server-side API of our choice. I know that this is good practice and will help me in the future
 
-## User Story
+<br>
 
-```
-AS A traveler
-I WANT to see the weather outlook for multiple cities
-SO THAT I can plan a trip accordingly
-```
+### Problems I solved:
+    * Used moment() to display the current date
+    * Used local storage to save and update an array
+    * Manipulated array so elements in array are displayed as buttons
+    * Used a server-side API to retrieve information about the weather
+    * Manipulated API URL to get the information I wanted
+<br />
+<br />
 
-## Acceptance Criteria
+## Installation:
+Download all associated files in this repository including the index.html file and all files in the assets folder. Style sheet is located in ../assets/css/style.css, JavaScript is located in ../assets/js/script/js
 
-```
-GIVEN a weather dashboard with form inputs
-WHEN I search for a city
-THEN I am presented with current and future conditions for that city and that city is added to the search history
-WHEN I view current weather conditions for that city
-THEN I am presented with the city name, the date, an icon representation of weather conditions, the temperature, the humidity, the wind speed, and the UV index
-WHEN I view the UV index
-THEN I am presented with a color that indicates whether the conditions are favorable, moderate, or severe
-WHEN I view future weather conditions for that city
-THEN I am presented with a 5-day forecast that displays the date, an icon representation of weather conditions, the temperature, the wind speed, and the humidity
-WHEN I click on a city in the search history
-THEN I am again presented with current and future conditions for that city
-```
+## Usage:
+The website has been deployed and can be accessed publicly by clicking [here](https://mikemallonit.github.io/HW6-WeatherDashboard/)
 
-## Mock-Up
+The website should look like this:
+![Website Screen Shot](./assets/websiteScreenshot.pdf)
 
-The following image shows the web application's appearance and functionality:
+<br />
 
-![The weather app includes a search option, a list of cities, and a five-day forecast and current weather conditions for Atlanta.](./Assets/06-server-side-apis-homework-demo.png)
-
-## Grading Requirements
-
-This homework is graded based on the following criteria: 
-
-### Technical Acceptance Criteria: 40%
-
-* Satisfies all of the above acceptance criteria plus the following:
-
-    * Uses the OpenWeather API to retrieve weather data.
-
-    * Uses `localStorage` to store persistent data.
-
-### Deployment: 32%
-
-* Application deployed at live URL.
-
-* Application loads with no errors.
-
-* Application GitHub URL submitted.
-
-* GitHub repository that contains application code.
-
-### Application Quality: 15%
-
-* Application user experience is intuitive and easy to navigate.
-
-* Application user interface style is clean and polished.
-
-* Application resembles the mock-up functionality provided in the homework instructions.
-
-### Repository Quality: 13%
-
-* Repository has a unique name.
-
-* Repository follows best practices for file structure and naming conventions.
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages.
-
-* Repository contains quality readme file with description, screenshot, and link to deployed application.
-
-## Review
-
-You are required to submit BOTH of the following for review:
-
-* The URL of the functional, deployed application.
-
-* The URL of the GitHub repository. Give the repository a unique name and include a readme describing the project.
-
-- - -
-© 2021 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
-
-
-
-
-https://www.w3schools.com/cssref/sel_class.asp
-https://www.w3schools.com/cssref/tryit.asp?filename=trycss_sel_class
-https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Images/Using_CSS_gradients
-https://www.w3schools.com/css/css_border_shorthand.asp
-https://www.w3docs.com/snippets/css/how-to-horizontally-center-a-div-with-css.html
-http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/colors/colors_picker.asp-colorhex=B0E0E6.html
-https://www.bestcssbuttongenerator.com/#/28
-https://blog.hubspot.com/website/css-border
-https://stackoverflow.com/questions/15567395/force-elements-to-be-horizontally-aligned
-https://momentjs.com/
+## Credits
+- SMU
+- [Mozilla](https://developer.mozilla.org)
+- [HubSpot](https://blog.hubspot.com/website/css-border)
+- [W3 Schools](https://www.w3schools.com/)
+- [W3.org](https://www.w3.org/)
+- [Stack Overflow](https://stackoverflow.com)
+- [Moment](https://momentjs.com/)

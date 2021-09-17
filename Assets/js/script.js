@@ -78,7 +78,7 @@ function getCurrentWeather(cityName, units){
     })
 
     .then(weather => {
-        console.log("Whole thing ", weather);
+        //console.log("Whole thing ", weather);
         //console.log("Current Temp " + weather.main.temp);
 
        var date = moment().format('MM/DD/YYYY');
@@ -92,8 +92,6 @@ function getCurrentWeather(cityName, units){
         var lat = weather.coord.lat;
         var lon = weather.coord.lon;
 
-
-
         getAdvancedWeather(lat, lon);
         save(weather.name);
         loadSavedCities();
@@ -101,6 +99,7 @@ function getCurrentWeather(cityName, units){
     })
  }
 
+ //Return 5 day forcast
  function getAdvancedWeather(lat, lon){
 
     var url = 'https://api.openweathermap.org/data/2.5/onecall?lat='+lat+'&lon='+lon+'&units=imperial&exclude=minutelt,hourly&appid=8ddd48929a37115dc77fee6865b3699e';
@@ -111,7 +110,7 @@ function getCurrentWeather(cityName, units){
     })
 
     .then(weather => {
-        console.log("Whole thing (advanced) ", weather);
+        //console.log("Whole thing (advanced) ", weather);
         //console.log("Current Temp " + weather.main.temp);
 
         currentUv.innerHTML = weather.current.uvi;
@@ -159,7 +158,6 @@ function getCurrentWeather(cityName, units){
         fiveWind.innerHTML= "Wind: "+weather.daily[5].wind_speed+" MPH";
         fiveHumid.innerHTML="Humidity: "+weather.daily[5].humidity+" %";
         fivePic.src= "http://openweathermap.org/img/wn/"+weather.daily[5].weather[0].icon+"@2x.png";
-
     })
  }
 
@@ -276,9 +274,8 @@ saveSix.addEventListener("click", function(){
     }
 });
 
+//Format current UV index in green, yellow or red
 function formatUv(uv){
-
-    console.log(uv)
 
     if(uv >= 6){
         currentUv.setAttribute("class", "uvHigh");
@@ -291,7 +288,6 @@ function formatUv(uv){
     }
 }
 
-
 //Clear cached cities (testing purposes)
 function clearSaved(){
 
@@ -300,4 +296,5 @@ function clearSaved(){
 
 }
 
+//Load the cities in local storage uppon page load
 loadSavedCities();
