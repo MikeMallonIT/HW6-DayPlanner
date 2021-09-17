@@ -6,6 +6,11 @@ h4 * {
     padding: 0px;;
 }
 
+.hidden{
+    visibility: hidden;
+    position: absolute;
+  }
+
 
 .header{
 
@@ -43,7 +48,7 @@ aside button:hover {
 .currentCitySummary{
     border: 2px solid black;
     width: 70%;
-    height: 200px;
+    height: 225px;
     float: inline-start; 
     position: relative;
     margin-left: 315px;
@@ -65,7 +70,7 @@ aside button:hover {
 }
 
 .fiveDay{
-    height: 350px;
+    height: 400px;
     padding: 15px;
     padding-top: 0px;
     padding-left: 0px;
@@ -75,7 +80,7 @@ aside button:hover {
     padding: 10px;
     padding-top: 0px;
     width: 170px;
-    height: 200px;
+    height: 225px;
     background-color: rgb(37, 54, 70);
     margin-right: 15px;
     display: inline-block;
@@ -99,4 +104,11 @@ aside button:hover {
     color: white;
 }
 
+.formattedCity img{
+    float: right;
+}
+
+.currentPic {
+    float: right;
+}
 
