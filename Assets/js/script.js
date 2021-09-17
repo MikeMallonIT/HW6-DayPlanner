@@ -92,12 +92,7 @@ function getCurrentWeather(cityName, units){
         var lat = weather.coord.lat;
         var lon = weather.coord.lon;
 
-        currentPic.setAttribute("class", "");
-        onePic.setAttribute("class", "");
-        twoPic.setAttribute("class", "");
-        threePic.setAttribute("class", "");
-        fourPic.setAttribute("class", "");
-        fivePic.setAttribute("class", "");
+
 
         getAdvancedWeather(lat, lon);
         save(weather.name);
@@ -120,6 +115,13 @@ function getCurrentWeather(cityName, units){
         //console.log("Current Temp " + weather.main.temp);
 
         currentUv.innerHTML = "UV Index: "+weather.current.uvi;
+
+        currentPic.setAttribute("class", "");
+        onePic.setAttribute("class", "");
+        twoPic.setAttribute("class", "");
+        threePic.setAttribute("class", "");
+        fourPic.setAttribute("class", "");
+        fivePic.setAttribute("class", "");
         
         //1 of 5 day forcast
         oneDate.innerHTML= moment().add(1, 'days').format('MM/DD/YYYY');
