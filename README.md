@@ -23,10 +23,10 @@ I knew from the start that server-side APIs were important and this homework ass
 Download all associated files in this repository including the index.html file and all files in the assets folder. Style sheet is located in ../assets/css/style.css, JavaScript is located in ../assets/js/script/js
 
 ## Usage:
-The website has been deployed and can be accessed publicly by clicking [here](https://mikemallonit.github.io/HW6-WeatherDashboard/)
+The website has been deployed and can be accessed publicly by clicking [here](https://main.d36v7ke5sieg8n.amplifyapp.com/)
 
 The website should look like this:
-![Website Screen Shot](https://github.com/MikeMallonIT/HW6-WeatherDashboard/blob/main/Assets/websiteScreenShot.pdf)
+![Website Screen Shot](./assets/websiteScreenShot.pdf)
 
 
 <br />
