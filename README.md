@@ -26,7 +26,7 @@ Download all associated files in this repository including the index.html file a
 The website has been deployed and can be accessed publicly by clicking [here](https://main.d36v7ke5sieg8n.amplifyapp.com/)
 
 The website should look like this:
-![Website Screen Shot](./Assets/websiteScreenShot.pdf)
+![Website Screen Shot](./Assets/weather.jpg)
 
 
 <br />
